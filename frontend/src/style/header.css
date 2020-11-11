@@ -1,0 +1,311 @@
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: hsl(210, 36%, 96%);
+  color: hsl(209, 61%, 16%);
+
+  font-size: 0.875rem;
+}
+ul,
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.5rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+
+.navList a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: capitalize;
+  transition: all 0.3 linear;
+}
+div a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+
+  margin-bottom: 5rem;
+}
+div a:hover {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+}
+/* 
+=============
+Header Style
+=============
+*/
+.navLogo {
+  font-family: 'Anonymous Pro', monospace;
+  font-weight: bold !important;
+  font-size: 2rem !important;
+  color: white !important;
+  text-decoration: none !important;
+  margin-left: 3rem;
+}
+
+.navHeader {
+  display: grid !important;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  background-color: #2b7a78;
+  box-shadow: 1px 1px 10px 2px #3aafa9;
+  height: 5rem;
+  width: inherit;
+  position: relative;
+  z-index: 1;
+}
+.navList {
+  display: grid;
+  margin-top: 0.7rem;
+  text-decoration: none;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  grid-column-gap: 4rem;
+}
+
+.navButtons {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-around;
+  grid-column-gap: 2rem;
+  padding-bottom: 20%;
+  margin-right: 3rem;
+}
+
+.loginBtn {
+  background: black;
+  color: white;
+  border-radius: 20px 20px 20px 20px;
+  height: 40px;
+  width: 90px;
+  border: none;
+  outline: none !important;
+  font-family: 'Roboto' !important;
+  font-weight: bold !important;
+  text-align: center;
+}
+.loginBtn:hover {
+  background: #242424 !important;
+}
+
+.cartIcon {
+  background: none;
+  border: none;
+  outline: none !important;
+  font-size: 1.5rem;
+}
+
+.searchIcon {
+  background: none;
+  border: none;
+  outline: none !important;
+  font-size: 1.5rem;
+  transition: all 0.3s linear;
+}
+.searchIcon:hover {
+  transition: all 0.3s linear;
+  transform: rotate(90deg);
+}
+
+/* 
+================
+Search Bar Style
+================
+*/
+.noDisplay {
+  display: none;
+}
+.searchBar {
+  display: grid;
+  grid-template-columns: repeat(3, 4fr);
+  position: absolute;
+  z-index: 2;
+  grid-gap: 2rem;
+  background: rgb(84, 185, 109);
+  width: 100%;
+  height: 5rem;
+  box-shadow: 1px 1px 2px 1px grey;
+}
+
+.searchBarLogo {
+  font-family: 'Anonymous Pro', monospace;
+  font-weight: bold !important;
+  font-size: 2rem !important;
+  color: white !important;
+  text-decoration: none !important;
+  margin-left: 3rem;
+  padding-top: 1rem;
+}
+.searchBtn {
+  background: black;
+  color: white;
+  border-radius: 20px 20px 20px 20px;
+  height: 40px;
+  width: 90px;
+  border: none;
+  outline: none !important;
+  font-family: 'Roboto' !important;
+  font-weight: bold !important;
+  text-align: center;
+}
+.cancelBtn {
+  background: rgb(184, 183, 183);
+  color: rgb(14, 11, 11);
+  border-radius: 20px 20px 20px 20px;
+  height: 40px;
+  width: 90px;
+  border: none;
+  outline: none !important;
+  font-family: 'Roboto' !important;
+  font-weight: bold !important;
+  text-align: center;
+}
+.searchInput {
+  border-radius: 20px 20px 20px 20px;
+  border: black 3px solid;
+  background: rgba(219, 219, 219, 0.452);
+  outline: none;
+  height: 2.5rem;
+  padding-left: 1rem;
+}
+.searchForm {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 2rem;
+  padding-top: 1.2rem;
+}
+
+@media (min-width: 881px) {
+  .bars {
+    display: none;
+  }
+}
+@media (max-width: 880px) and (min-width: 768px) {
+  .navButtons {
+    grid-gap: 1rem;
+    margin-right: 1rem;
+  }
+  .navList {
+    justify-content: stretch;
+    grid-gap: 2rem;
+  }
+  .navLogo {
+    margin-left: 2rem;
+  }
+  .bars {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navHeader {
+    justify-content: space-between;
+  }
+  .navList {
+    display: none;
+  }
+  .navLogo {
+    margin-left: 1rem;
+  }
+  .bars:hover {
+    transform: rotate(90deg);
+    transition: all 0.3s linear;
+  }
+  .bars {
+    border: none;
+    outline: none !important;
+    background: none;
+    color: black;
+    width: 1rem;
+    font-size: 1.5rem;
+    transition: all 0.3s linear;
+  }
+  .navButtons {
+    grid-gap: 1rem;
+    margin-right: 1rem;
+  }
+  .resNav {
+    padding-top: 0.5rem;
+    display: grid;
+    text-align: center;
+    grid-template-rows: repeat(4, 2fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s linear;
+    background-color: #3aafa9;
+  }
+  .link {
+    width: ;
+  }
+  .searchBarLogo {
+    display: none;
+  }
+  .searchBar {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0rem;
+    padding-left: 1rem;
+  }
+  .searchBar div {
+    justify-content: space-between;
+
+    align-items: center;
+  }
+  .searchInput {
+    width: 100%;
+  }
+  .searchForm {
+    grid-gap: 4px;
+  }
+  .cancelBtn {
+    justify-self: end;
+    margin-left: 4px;
+    margin-right: 2px;
+    width: 70px;
+    grid-template-rows: subgrid;
+  }
+  .searchBtn {
+    width: 70px;
+  }
+}
