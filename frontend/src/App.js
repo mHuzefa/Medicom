@@ -8,6 +8,7 @@ import LoginPage from './pages/LoginPage'
 import ProductPage from './pages/ProductPage'
 import SignUp from './pages/RegistrationPage'
 import SingleProduct from './pages/SingleProduct'
+import UserProfilePage from './pages/UserProfilePage'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path='/cart' component={ProductSubtotal} exact />
         <Route path='/product' component={ProductPage} exact />
         <Route path='/product/:id' component={SingleProduct} exact />
+        <Route path='/UserProfile' component={UserProfilePage} exact />
       </div>
     </Router>
   )
