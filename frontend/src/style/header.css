@@ -10,45 +10,9 @@ Global Styles
   margin: 0;
   padding: 0;
 }
-body {
-  font-family: 'Open Sans', sans-serif;
-  background: hsl(210, 36%, 96%);
-  color: hsl(209, 61%, 16%);
-
-  font-size: 0.875rem;
-}
-ul,
 li {
   list-style-type: none;
-  text-decoration: none;
 }
-
-a {
-  text-decoration: none;
-}
-h1,
-h2,
-h3,
-h4 {
-  letter-spacing: 0.5rem;
-  text-transform: capitalize;
-  line-height: 1.25;
-  margin-bottom: 0.75rem;
-  font-family: 'Roboto', sans-serif;
-}
-h1 {
-  font-size: 3rem;
-}
-h2 {
-  font-size: 2rem;
-}
-h3 {
-  font-size: 1.25rem;
-}
-h4 {
-  font-size: 0.875rem;
-}
-
 .navList a {
   text-decoration: none;
   color: aliceblue;
@@ -156,6 +120,9 @@ Search Bar Style
 .noDisplay {
   display: none;
 }
+.none {
+  display: none;
+}
 .searchBar {
   display: grid;
   grid-template-columns: repeat(3, 4fr);
@@ -164,6 +131,7 @@ Search Bar Style
   grid-gap: 2rem;
   background: rgb(84, 185, 109);
   width: 100%;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   height: 5rem;
   box-shadow: 1px 1px 2px 1px grey;
 }
@@ -275,9 +243,7 @@ Search Bar Style
     transition: all 0.3s linear;
     background-color: #3aafa9;
   }
-  .link {
-    width: ;
-  }
+
   .searchBarLogo {
     display: none;
   }

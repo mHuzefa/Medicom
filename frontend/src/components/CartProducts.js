@@ -3,6 +3,45 @@ import '../style/cart.css'
 import '../style/index.css'
 import CartTableHeader from './CartTableHeader'
 const CartProducts = () => {
+  let productsCart = [
+    {
+      id: '12121',
+      productName: 'Amoxil',
+      productCompany: 'Pfizer',
+      tables: '10',
+      image: '/image',
+      price: '1000',
+      tabletWeight: '10gm',
+    },
+    {
+      id: '12awa121',
+      productName: 'Nuberal',
+      productCompany: 'Pfizer',
+      tables: '10',
+      image: '/image',
+      price: '1000',
+      tabletWeight: '10gm',
+    },
+    {
+      id: '1212wnsxw21',
+      productName: 'Ponstan',
+      productCompany: 'Pfizer',
+      tables: '10',
+      image: '/image',
+      price: '1000',
+      tabletWeight: '10gm',
+    },
+    {
+      id: '121asdqw321',
+      productName: 'Dicloran',
+      productCompany: 'Pfizer',
+      tables: '10',
+      image: '/image',
+      price: '1000',
+      tabletWeight: '10gm',
+    },
+  ]
+
   let price = 1789
   const [qtyIncrease, setQtyIncrease] = useState({
     counter: '1',
@@ -19,8 +58,6 @@ const CartProducts = () => {
         return (parseInt(this.counter) * price).toString()
       },
     })
-
-    console.log(qtyIncrease.subtotal())
   }
   const qtyHandlerMinus = () => {
     let numberCnvrt = parseInt(qtyIncrease.counter)

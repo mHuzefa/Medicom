@@ -1,0 +1,58 @@
+.container {
+  margin-right: 60%;
+  width: 60vw;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  background-color: aqua;
+  height: 3rem;
+}
+.row {
+  padding: 1rem;
+}
+.productImg {
+  height: 150px;
+}
+.productName {
+  font-size: 1vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+.productDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.productDescription p {
+  font-size: 10px;
+  background-color: aqua;
+}
+.qtyPlus {
+  background: none;
+
+  border: none;
+  outline: none !important;
+  font-size: 1.2rem;
+}
+.qtyMinus {
+  background: none;
+  border: none;
+  outline: none !important;
+  font-size: 1.2rem;
+}
+.qtyBox {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid grey;
+  outline: none !important;
+  text-align: center;
+}
+.productQty {
+  display: grid;
+  grid-gap: 0rem;
+  width: 100px;
+
+  height: 50px;
+}

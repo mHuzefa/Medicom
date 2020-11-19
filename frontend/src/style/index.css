@@ -1,0 +1,32 @@
+.linkText {
+  color: black;
+}
+
+#productPage {
+  border-radius: 0%;
+  box-shadow: none;
+}
+#productPage:hover {
+  background-color: rgba(235, 226, 226, 0.472);
+  box-shadow: 0.5px 0.5px 4px 4px rgb(235, 231, 231);
+}
+.addToCartButton {
+  background: black;
+  color: white;
+  border-radius: 10px 10px 10px 10px;
+  height: 2.4rem;
+  width: 70%;
+  border: none;
+
+  outline: none !important;
+  font-family: 'Roboto' !important;
+  font-weight: bold !important;
+  text-align: center;
+}
+.addtoCartCenter {
+  display: flex;
+  width: auto;
+  height: 0px;
+  justify-content: center;
+  align-items: center;
+}
