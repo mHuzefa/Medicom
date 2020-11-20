@@ -18,5 +18,9 @@
   "homepage": "https://github.com/mHuzefa/SEPID01-Medicom#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-plugin-react": "^7.21.5"
   }
 }

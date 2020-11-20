@@ -9,6 +9,7 @@ import ProductPage from './pages/ProductPage'
 import SignUp from './pages/RegistrationPage'
 import SingleProduct from './pages/SingleProduct'
 import UserProfilePage from './pages/UserProfilePage'
+import HomePage from './pages/HomePage'
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path='/product' component={ProductPage} exact />
         <Route path='/product/:id' component={SingleProduct} exact />
         <Route path='/UserProfile' component={UserProfilePage} exact />
+        <Route path='/HomePage' component={HomePage} exact />
       </div>
     </Router>
   )
