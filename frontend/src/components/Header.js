@@ -75,10 +75,10 @@ const Header = () => {
         <div>
           <ul className='navList'>
             <li>
-              <Link to='/'>HOME</Link>
+              <Link to='/HomePage'>HOME</Link>
             </li>
             <li>
-              <Link to='/'>CATEGORY</Link>
+              <Link to='/productpage'>CATEGORY</Link>
             </li>
             <li>
               <Link to='/'>CONTACT</Link>
