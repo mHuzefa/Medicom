@@ -124,15 +124,17 @@ export default function MiniDrawer() {
   return (
     <div className={classes.root}>
       <CssBaseline />
+      <div color="#3aafa9">
       <AppBar
-        position="fixed"
+        position="fixed"  
+        style={{ background: '#2b7a78' }}
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
         })}
       >
-        <Toolbar color="green">
+        <Toolbar>
           <IconButton
-            color="black"
+            color="white"
             aria-label="open drawer"
             onClick={handleDrawerOpen}
             edge="start"
@@ -143,9 +145,14 @@ export default function MiniDrawer() {
             <MenuIcon />
 
           </IconButton>
-          
+          <div>
+          <Link className='navLogo' to='/'>
+            Medicom
+          </Link>
+          </div>
         </Toolbar>
       </AppBar>
+      </div>
       <Drawer
         variant="permanent"
         className={clsx(classes.drawer, {
