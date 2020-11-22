@@ -25,6 +25,7 @@ const App = () => {
         <Route path='/product/:id' component={SingleProduct} exact />
         <Route path='/UserProfile' component={UserProfilePage} exact />
         <Route path='/HomePage' component={HomePage} exact />
+        <Route path='/' component={HomePage} exact />
       </div>
     </Router>
   )
