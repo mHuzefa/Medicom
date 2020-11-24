@@ -2,6 +2,7 @@ const products = [
   {
     _id: '1',
     name: 'Panadol',
+    formulation: ['Paracetamol','Aspirin','Caffeine'],
     image: '/images/panadol.png',
     description:
       'Paracetamol, also known as acetaminophen, is a medication used to treat pain and fever. It is typically used for mild to moderate pain relief. Evidence is mixed for its use to relieve fever in children. It is often sold in combination with other medications, such as in many cold medications.',

@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom'
 import Rating from '../components/Rating'
 import '../style/index.css'
 
+
 const Product = ({ product }) => {
+  const formulation = product.formulation;
   return (
     <Card id='productPage' className='my-3 py-3'>
       <Link to={`/product/${product._id}`}>
@@ -16,6 +18,13 @@ const Product = ({ product }) => {
             <strong className='linkText'>{product.name}</strong>
           </Card.Text>
         </Link>
+        
+      <Card.Text as='div'>
+      {formulation.map(reptile => (
+        <li key={reptile}>{reptile}</li>
+      ))}
+      </Card.Text>
+
         <Card.Text as='div'>
           <Rating
             value={product.rating}
@@ -33,4 +42,23 @@ const Product = ({ product }) => {
   )
 }
 
+function ListItem(props) {
+  // Correct! There is no need to specify the key here:
+  return <li>{props.value}</li>;
+}
+
+function NumberList(props) {
+  const numbers = props.numbers;
+  const listItems = numbers.map((number) =>
+    <ListItem key={number.toString()} value={number} />
+  );
+  return (
+    <ul>
+      {listItems}
+    </ul>
+  );
+}
+
 export default Product
+
+
