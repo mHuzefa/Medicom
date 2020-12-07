@@ -4,12 +4,13 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Checkout from './components/Checkout'
 import ProductSubtotal from './components/ProductSubtotal'
 import AdminLoginPage from './pages/AdminLoginPage'
+import Category from './pages/categories/Categories'
+import HomePage from './pages/HomePage'
 import LoginPage from './pages/LoginPage'
 import ProductPage from './pages/ProductPage'
 import SignUp from './pages/RegistrationPage'
 import SingleProduct from './pages/SingleProduct'
 import UserProfilePage from './pages/UserProfilePage'
-import HomePage from './pages/HomePage'
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route path='/UserProfile' component={UserProfilePage} exact />
         <Route path='/HomePage' component={HomePage} exact />
         <Route path='/' component={HomePage} exact />
+        <Route path='/product/category/:category' component={Category} exact />
       </div>
     </Router>
   )

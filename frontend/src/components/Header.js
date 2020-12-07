@@ -93,7 +93,7 @@ const Header = () => {
           <Link to='/login'>
             <button className='loginBtn'>Login</button>
           </Link>
-          <Link to='/'>
+          <Link to='/cart'>
             <button className='cartIcon'>
               <i className='fa fa-shopping-cart' aria-hidden='true'></i>
             </button>
