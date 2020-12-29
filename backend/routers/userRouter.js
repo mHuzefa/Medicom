@@ -3,7 +3,7 @@ import expressAsyncHandler from 'express-async-handler';
 import bcrypt from 'bcryptjs';
 import data from '../data.js';
 import User from '../models/userModel.js';
-//import { generateToken, isAdmin, isAuth } from '../utils.js';
+import { generateToken, isAdmin, isAuth } from '../utils.js';
 
 const userRouter = express.Router();
 
@@ -26,7 +26,7 @@ userRouter.get(
   })
 );
 
-/* userRouter.post(
+userRouter.post(
   '/signin',
   expressAsyncHandler(async (req, res) => {
     const user = await User.findOne({ email: req.body.email });
@@ -46,8 +46,7 @@ userRouter.get(
     res.status(401).send({ message: 'Invalid email or password' });
   })
 );
-
-userRouter.post(
+/* userRouter.post(
   '/register',
   expressAsyncHandler(async (req, res) => {
     const user = new User({
