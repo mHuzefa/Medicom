@@ -1,17 +1,19 @@
 import mongoose from 'mongoose'
-const userSchema = mongoose.Schema (
+
+const userSchema =new mongoose.Schema (
     {
         firstName: {
             type: String,
             required: true,
         },
-        lastName: {
+        /* lastName: {
             type: String,
             required: true,
-        },
+        }, */
         email: {
-            type: email,
+            type: String,
             required: true,
+            unique: true
         },
         address: [{
             type: mongoose.Schema.Types.ObjectId,
@@ -20,6 +22,11 @@ const userSchema = mongoose.Schema (
         }],
         password: {
             type: String,
+            required: true,
+        },
+        isAdmin: {
+            type: Boolean,
+            default: false,
             required: true,
         },
     },
